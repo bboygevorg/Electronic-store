@@ -1,0 +1,12 @@
+@import './variables';
+@import './normalize/normalize.scss';
+@import './pages/pages_all.scss';
+@import './component/component_all.scss';
+
+.wrapper {
+    background-color: #fff;
+}
+
+.background {
+    background-color: green;
+}

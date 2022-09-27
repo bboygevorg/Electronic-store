@@ -1,0 +1,123 @@
+@import '../../scss/variables.scss';
+
+
+.search_wrapper {
+    @media screen and (max-width: 767px) and (min-width: 100px) {
+        display: none;
+    }
+
+    .search_tern {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid $gray_6;
+    background-color: inherit;
+    color: #fff;
+    outline: none;
+    border-right: none;
+}
+
+.search_button {
+    width: 2.5rem;
+    height: 2.4rem;
+    background-color: $gray_10;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    border: 1px solid $gray_6;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-bottom: 3.2px;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 9.5px;
+        left: 9.5px;
+        }
+    
+}
+
+
+
+.search_tern:hover {
+    border-color: $gray_4;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.search_tern:hover + .search_button{
+    background-color: $purple_1;
+    border-color: $purple_1;
+    transition: 0.2s ease-in-out;
+}
+
+.search_tern:focus {
+    border-color: $purple_2;
+    transition: 0.1s ease-in-out;
+}
+
+.search_tern:focus + .search_button {
+    background-color: $purple_2;
+    border-color: $purple_2;
+    transition: 0.1s ease-in-out;
+}
+
+
+    .search_tern {
+        width: 80%;
+        padding: 10px;
+        border-radius: 8px 0 0 8px;
+        border: 1px solid $gray_6;
+        background-color: inherit;
+        color: #fff;
+        outline: none;
+        border-right: none;
+    }
+    
+    .search_button {
+        width: 2.5rem;
+        height: 2.4rem;
+        background-color: $gray_10;
+        border-radius: 0 5px 5px 0;
+        text-align: center;
+        border: 1px solid $gray_6;
+        cursor: pointer;
+        vertical-align: middle;
+        margin-bottom: 3.2px;
+        position: relative;
+    
+        img {
+            position: absolute;
+            top: 9.5px;
+            left: 9.5px;
+            }
+        
+    }
+    
+    
+    
+    .search_tern:hover {
+        border-color: $gray_4;
+        transition: 0.2s ease-in-out;
+        
+    }
+    
+    .search_tern:hover + .search_button{
+        background-color: $purple_1;
+        border-color: $purple_1;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .search_tern:focus {
+        border-color: $purple_2;
+        transition: 0.1s ease-in-out;
+    }
+    
+    .search_tern:focus + .search_button {
+        background-color: $purple_2;
+        border-color: $purple_2;
+        transition: 0.1s ease-in-out;
+    }
+    
+}
+
