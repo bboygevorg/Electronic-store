@@ -1,0 +1,88 @@
+@import '../../scss/variables.scss';
+
+.banner {
+    width: 100%;
+    background-color: #E2F0E6;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 3.5rem 0;
+    border-radius: 1rem;
+
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+
+    }
+
+    &__info {
+        margin: 1.5rem 1.5rem;
+
+        @media screen and (max-width: 767px) and (min-width: 320px) {
+            margin: 0;
+            padding-top: 1rem;
+    
+        }
+    
+
+        &_title {
+            @include h1;
+            font-weight: $font_weight_700;
+
+            @media screen and (max-width: 1200px) and (min-width: 767px) {
+                @include h2;
+                font-size: 2.5rem;
+            }
+
+            @media screen and (max-width: 767px) and (min-width: 320px) {
+                @include h3;
+                
+            }
+        }
+
+        &_text {
+            @include h4;
+            font-weight: $font_weight_500;
+        }
+
+        &_price {
+            @include h4;
+            font-weight: $font_weight_700;
+            color: $purple_1;
+            margin-top: 0.7rem;
+        }
+
+        &_button {
+            margin-top: 2rem;
+            width: 9.802rem;
+
+            @media screen and (max-width: 767px) and (min-width: 320px) {
+                margin-top: 1rem;
+            }
+            
+        }
+    }
+
+    &__img {
+        width: 25rem;
+
+        @media screen and (max-width: 1200px) and (min-width: 767px) {
+            width: 20rem;
+        }
+
+        @media screen and (max-width: 767px) and (min-width: 320px) {
+            width: 15rem;
+            margin: 0 auto;
+            
+        }
+
+
+        img {
+            width: 100%;
+
+            @media screen and (max-width: 767px) and (min-width: 320px) {
+                width: 100%;
+            }
+        }
+    }
+}

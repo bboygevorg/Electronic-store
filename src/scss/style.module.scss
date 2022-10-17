@@ -1,12 +1,11 @@
 @import './variables';
 @import './normalize/normalize.scss';
-@import './pages/pages_all.scss';
-@import './component/component_all.scss';
 
 .wrapper {
+    width: 100%;
     background-color: #fff;
 }
 
-.background {
-    background-color: green;
+.content {
+    width: 100%;
 }

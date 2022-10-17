@@ -1,0 +1,95 @@
+@import '../../scss/variables.scss';
+
+
+.container {
+    width: 100%;
+    max-width: 87rem;
+    margin: 4.3rem auto;
+
+    @media screen and (max-width: 1200px) and (min-width: 767px)  {
+        padding: 0 1.2rem;
+    }
+
+    @media screen and (max-width: 767px) and (min-width: 320px)  {
+        padding: 0 1.5rem;
+        margin: 6.1rem 0;
+    }
+
+    .home_search {
+        display: none;
+        
+        @media screen and (max-width: 767px) and (min-width: 320px) {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: -5rem;
+        }
+    }
+
+    .container_title {
+
+        @include h3;
+        color: $gray_900;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 2.6rem;
+        margin-bottom: 1rem;
+
+        @media screen and (max-width: 1200px) and (min-width: 767px) {
+            font-size: 1.7rem;
+        }
+
+        @media screen and (max-width: 767px) and (min-width: 320px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .deals_bar_content {
+        width: 100%;
+    }
+
+    .section_slide {
+        max-width: $container_width;
+        margin: 0 auto;
+    }
+
+    .section_banner {
+        max-width: $container_width;
+        margin: 4rem auto;
+        
+    }
+
+}
+
+.section_info {
+    width: 100%;
+    background-color: $white_2;
+    padding: 3rem 9.3rem;
+
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        margin-top: 2rem;
+        padding: 3rem 0;
+    }
+
+    .info {
+        max-width: $container_width;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+
+
+        @media screen and (max-width: 1200px) and (min-width: 767px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+
+        @media screen and (max-width: 767px) and (min-width: 320px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 80%;
+            
+        }
+    }
+}

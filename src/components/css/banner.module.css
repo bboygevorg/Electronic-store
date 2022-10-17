@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+.banner {
+  width: 100%;
+  background-color: #E2F0E6;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 3.5rem 0;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+}
+.banner__info {
+  margin: 1.5rem 1.5rem;
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .banner__info {
+    margin: 0;
+    padding-top: 1rem;
+  }
+}
+.banner__info_title {
+  font-family: "Inter", sans-serif;
+  font-size: 72px;
+  line-height: 86.4px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) and (min-width: 767px) {
+  .banner__info_title {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    line-height: 62.4px;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .banner__info_title {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+.banner__info_text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.banner__info_price {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #3598CC;
+  margin-top: 0.7rem;
+}
+.banner__info_button {
+  margin-top: 2rem;
+  width: 9.802rem;
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .banner__info_button {
+    margin-top: 1rem;
+  }
+}
+.banner__img {
+  width: 25rem;
+}
+@media screen and (max-width: 1200px) and (min-width: 767px) {
+  .banner__img {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .banner__img {
+    width: 15rem;
+    margin: 0 auto;
+  }
+}
+.banner__img img {
+  width: 100%;
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .banner__img img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=banner.module.css.map */

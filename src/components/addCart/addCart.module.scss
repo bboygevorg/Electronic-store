@@ -1,0 +1,19 @@
+@import '../../scss/variables.scss';
+
+.option_content{
+    display: flex;
+    
+    .watch_list {
+        width: 3.5rem;
+    }
+
+    .wish_list {
+        width: 3.5rem;
+    }
+}
+
+
+.button_content {
+    width: 10rem;
+    margin-top: 1rem;
+}

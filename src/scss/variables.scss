@@ -1,21 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 //color
-$gray_1: #f9fafb; 
-$gray_2: #f3f4f6;
-$gray_3: #e5e7eb;
-$gray_4: #d1d5d7;
-$gray_5: #9ca3af;
-$gray_6: #6b7280;
-$gray_7: #4b5563;
-$gray_8: #374155;
-$gray_9: #1f2937;
-$gray_10: #111827;
+$gray_050: #f9fafb; 
+$gray_100: #f3f4f6;
+$gray_200: #e5e7eb;
+$gray_300: #d1d5d7;
+$gray_400: #9ca3af;
+$gray_500: #6b7280;
+$gray_600: #4b5563;
+$gray_700: #374155;
+$gray_800: #1f2937;
+$gray_900: #111827;
 
 $purple_1: #3598CC;
 $purple_2: #1E75A3;
 
+$white_1: #fff;
+$white_2: #F5F5F7;
+$transparent_1: rgba(255, 255, 255, 0.7);
+
 $container_width: 71.25rem;
+$container_width_2: 90rem; 
+
 $media_width1: 3rem;
-$media_width2: 1.5rem
+$media_width2: 1.5rem;
 
+$font_weight_normal: normal;
+$font_weight_500: 500;
+$font_weight_600: 600;
+$font_weight_700: 700;
+$font_weight_bold: 900;
 
- 
+$border_radius: 16px;
+
+$box_shadow_1: 0 1px 2px rgba(0, 0, 0, 0.5);
+$box_shadow_2: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rbga(0, 0, 0, 0.1);
+$box_shadow_3: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+$box_shadow_4: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+$box_shadow_5: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+$box_shadow_6: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+$box_shadow_7: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+
+@mixin h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    line-height: 86.4px;
+}
+
+@mixin h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    line-height: 62.4px;
+}
+
+@mixin h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+@mixin h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@mixin paragraph_1 {
+    font-family: 'Inter' sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@mixin paragraph_2 {
+    font-family: 'Inter' sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+@mixin paragraph_3 {
+    font-family: 'Inter' sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin paragraph_4 {
+    font-family: 'Inter' sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin paragraph_5 {
+    font-family: 'Inter' sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+//button
+@mixin button_default {
+    background-color: $purple_1;
+    border-color: none;
+    color: $white_1;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    @include paragraph_2;
+    font-weight: $font_weight_500;
+    border: #C0E8FC;
+
+    &:hover{
+        background-color: $purple_2;
+    }
+    
+}
+
+@mixin button_focus {
+    background-color: $purple_1;
+    border: 2px solid #C0E8FC;
+    border-radius: 0.75rem;
+    color: $white_1;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    @include paragraph_2;
+    font-weight: $font_weight_500;
+}

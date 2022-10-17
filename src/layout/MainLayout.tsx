@@ -1,21 +1,21 @@
 import React from "react";
 import {Outlet} from 'react-router-dom';
-import  {Header, Search}  from "../components";
+import  {Footer, Header}  from "../components";
 
 
 import classes from '../scss/style.module.scss'
 
 
-const MainLayout = () => {
+const MainLayout: React.FC = () => {
     
 
     return (
         <div className={classes.wrapper}>
             <Header />
-            <div className="content">
+            <div className={classes.content}>
                 <Outlet />
             </div>
-            <div>2</div>
+            <Footer />
         </div>
     )
 } 

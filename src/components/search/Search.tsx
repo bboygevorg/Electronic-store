@@ -1,27 +1,28 @@
 import React from "react";
-import defaultClasses from './search.module.scss'
-import { mergeClasses } from "../../helpers/mergeClasses";
-
 import search from '../../assets/icon/Vector.svg'
+import {Input, Button} from '../../helpers/globalStyle';
 
 type SearchTypes = {
-    classes: String;
+    borderColor: string | undefined;
+    buttonColor: string | undefined;
+    color: string | undefined;
 
 }
 
 export const Search = (props: SearchTypes) => {
 
-    const classes = mergeClasses(defaultClasses, props.classes)
-
     return (
-        <div className={classes.search_wrapper}>
-            <input type="text" 
-                   placeholder="Search for products and brands"
-                   className={defaultClasses.search_tern}
+        <div  >
+            <Input input='text'
+                   placeholder='Search for product and brands'
+                   borderColor={props.borderColor}
+                   color={props.color}
             />
-            <button type="submit" className={classes.search_button}>
-                <img src={search} alt="" />
-            </button>
+            <Button type="submit" buttonColor={props.buttonColor} 
+                                  borderColor={props.borderColor}
+            >
+               <img src={search} alt="" />
+            </Button>    
         </ div>
     )
 }
