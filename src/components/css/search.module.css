@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@media screen and (max-width: 767px) and (min-width: 100px) {
+  .search_wrapper {
+    display: none;
+  }
+}
+.search_wrapper img {
+  position: absolute;
+  top: 9.5px;
+  left: 9.5px;
+}/*# sourceMappingURL=search.module.css.map */

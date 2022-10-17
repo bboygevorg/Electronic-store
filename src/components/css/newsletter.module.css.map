@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../scss/variables.scss","../newsletter/newsletter.module.scss"],"names":[],"mappings":"AAAQ;ACER;EACI;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA,ODKE;ECJF;;AAEA;EATJ;IAUQ,kBDCF;ICAE;;;AAKR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA,kBDhBG;ECiBH,ODdE;EAqEN;EACA;EACA;ECvDI,aDJU;;ACMV;EACI,kBDrBD","file":"newsletter.module.css"}

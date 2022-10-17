@@ -1,0 +1,90 @@
+@import '../../scss/variables.scss';
+
+.productCart {
+    width: 100%;
+    border: 1px solid $gray_200;
+    border-radius: $border_radius;
+    padding-top: 1rem;
+
+    &__img {
+        width: 100%;
+    }
+
+    .add_hover {
+        display: none;
+    }
+    
+    &__info {
+        width: 16rem;
+        padding: 0 1rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+        margin-bottom: 2.3rem;
+
+
+        &_text {
+            @include paragraph_3;
+            
+        }
+
+        &_raiting {
+            width: 100%;
+            display: flex;
+            margin-top: 0.7rem;
+            
+            img {
+                width: 40%;
+            }
+
+            span {
+                @include paragraph_5;
+                color: $gray_600;
+                margin-left: 0.5rem;
+            }
+        }
+
+        &_delivery {
+            width: 100%;
+            display: flex;
+            margin-top: 0.5rem;
+
+            span {
+                @include paragraph_4;
+                color: $gray_600;
+                margin-left: 0.5rem;
+            }
+        }
+
+        &_price {
+            width: 10rem;
+            display: flex;
+            
+
+            .disc_price {
+                color: $purple_1;
+                font-size: 1.5rem;
+                font-weight: 700;
+                font-family: 'Inter' sans-serif;
+            }
+
+            .direct_price {
+                @include paragraph_3;
+                display: flex;
+                align-items: center;
+                color: $gray_500;
+                margin-left: 0.5rem;
+                font-weight: $font_weight_700;
+                text-decoration: line-through;
+
+            }
+        }
+
+    }
+
+}
+
+.productCart:hover > .add_hover {
+    display: block;
+}

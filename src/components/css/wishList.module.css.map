@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../scss/variables.scss","../wishList/wishList.module.scss"],"names":[],"mappings":"AAAQ;ACER;EACI,kBDcM;ECbN;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AAKR;EACI,kBDHO;ECIP;EACA;EACA;EACA;;AAEA;EACI;EACA,QDRE","file":"wishList.module.css"}
