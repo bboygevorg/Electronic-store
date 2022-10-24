@@ -13,3 +13,5 @@ export * from "./productCart/ProductCart";
 export * from "./addCart/AddCart";
 export * from "./banner/Banner";
 export * from "./newsletter/Newsletter";
+export * from "./menuBurger/MenuBurger";
+export * from "./blockContainer/BlockContainer";

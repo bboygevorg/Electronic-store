@@ -8,11 +8,26 @@ import barIcon1 from "../../assets/icon/barIcon1.svg";
 import barIcon2 from "../../assets/icon/barIcon2.svg";
 import barIcon3 from "../../assets/icon/barIcon3.svg";
 
-import { Search } from "../../components";
+import { BlockContainer, MenuBurger, Search } from "../../components";
 
-export const Header: React.FC = () => {
+type scrollUpdateProps = {
+  updateScroll: any;
+};
+
+export const Header = (props: scrollUpdateProps) => {
+  const [menuActiveMobile, setMenuActiveMobile] = React.useState(false);
+
   return (
     <div className={classes.header}>
+      <BlockContainer
+        active={menuActiveMobile}
+        setActive={setMenuActiveMobile}
+      />
+      <MenuBurger
+        active={menuActiveMobile}
+        setActive={setMenuActiveMobile}
+        updateScroll={props.updateScroll}
+      />
       <div className={classes.container}>
         <div className={classes.top_header}>
           <div className={classes.logo}>
@@ -21,7 +36,14 @@ export const Header: React.FC = () => {
             </Link>
           </div>
           <div className={classes.search}>
-            <Search borderColor="#6b7280" buttonColor="#1f2937" color="#fff" />
+            <Search
+              borderColor="#6b7280"
+              buttonColor="#1f2937"
+              color="#fff"
+              buttonWidth="2.5rem"
+              buttonHeight="2.44rem"
+              buttonMarginBottom="2.3px"
+            />
           </div>
           <div className={classes.account_bar}>
             <div className={classes.navigate_header}>
@@ -34,7 +56,13 @@ export const Header: React.FC = () => {
                 <img src={barIcon2} alt="" />
               </Link>
             </div>
-            <div className={classes.burger_menu}>
+            <div
+              className={classes.burger_menu}
+              onClick={() => {
+                setMenuActiveMobile(!menuActiveMobile);
+                props.updateScroll(true);
+              }}
+            >
               <div className={classes.bar_1}></div>
               <div className={classes.bar_2}></div>
               <div className={classes.bar_3}></div>
