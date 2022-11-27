@@ -1,28 +1,31 @@
-@import '../../scss/variables.scss';
+@import "../../scss/variables.scss";
 
 .wish_list {
-    background-color: $white_1;
-    text-align: center;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0 1rem 1rem 0;
-    cursor: pointer;
+  background-color: $white_1;
+  text-align: center;
+  padding: 0.55rem 1rem;
+  border-radius: 0 1rem 1rem 0;
+  cursor: pointer;
+  border: 0;
+  outline: none;
 
-    svg {
-        fill: none;
-        stroke: black;
-    }
-
+  svg {
+    fill: none;
+    stroke: black;
+  }
 }
 
 .active {
-    background-color: $purple_1;
-    text-align: center;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0 0.75rem 0.75rem 0;
-    cursor: pointer;
+  background-color: $purple_1;
+  text-align: center;
+  padding: 0.55rem 1rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+  cursor: pointer;
+  border: 0;
+  outline: none;
 
-    svg {
-        fill: none;
-        stroke: $white_1;
-    }
+  svg {
+    fill: none;
+    stroke: $white_1;
+  }
 }

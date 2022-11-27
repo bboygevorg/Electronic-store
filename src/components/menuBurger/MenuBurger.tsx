@@ -17,7 +17,7 @@ const MenuBurger = (props: menuActiveProps) => {
   return (
     <div className={props.active ? classes.menu_active : classes.menu_mobile}>
       <div className={classes.menu_mobile__container}>
-        <div
+        <button
           className={classes.menu_mobile__container__closeBtn}
           onClick={() => {
             props.setActive(false);
@@ -26,7 +26,7 @@ const MenuBurger = (props: menuActiveProps) => {
         >
           <img src={closeBtn} alt="close" />
           <span>Close</span>
-        </div>
+        </button>
         <div className={classes.menu_mobile__container__logoMobile}>
           <Link to="/">
             <img src={logoMobile} alt="Lets bargain" />
@@ -37,15 +37,14 @@ const MenuBurger = (props: menuActiveProps) => {
       <div className={classes.menu_mobile__container}>
         <div className={classes.menu_mobile__container__nav}>
           <div>
-            <Link to="/">Today's Deals</Link>
+            <Link to="/">Today&apos;s Deals</Link>
+          </div>
+          <div>
+            <Link to="/products">Products</Link>
           </div>
           <div>
             <p>Brands</p>
-            <img src={rowRight} />
-          </div>
-          <div>
-            <p>Brands</p>
-            <img src={rowRight} />
+            <img src={rowRight} alt="" />
           </div>
           <div>
             <Link to="/">Clearance</Link>

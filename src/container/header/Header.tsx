@@ -43,6 +43,7 @@ export const Header = (props: scrollUpdateProps) => {
               buttonWidth="2.5rem"
               buttonHeight="2.44rem"
               buttonMarginBottom="2.3px"
+              strokeSvg="#fff"
             />
           </div>
           <div className={classes.account_bar}>
@@ -56,7 +57,7 @@ export const Header = (props: scrollUpdateProps) => {
                 <img src={barIcon2} alt="" />
               </Link>
             </div>
-            <div
+            <button
               className={classes.burger_menu}
               onClick={() => {
                 setMenuActiveMobile(!menuActiveMobile);
@@ -66,7 +67,7 @@ export const Header = (props: scrollUpdateProps) => {
               <div className={classes.bar_1}></div>
               <div className={classes.bar_2}></div>
               <div className={classes.bar_3}></div>
-            </div>
+            </button>
             <div className={`${classes.navigate_header}, ${classes.recycle}`}>
               <Link to="/">
                 <img src={barIcon3} alt="" />
@@ -79,11 +80,11 @@ export const Header = (props: scrollUpdateProps) => {
             <ul className={classes.nav_bar}>
               <li>
                 <Link className={classes.color} to="/">
-                  Today's Deals
+                  Today&apos;s Deals
                 </Link>
               </li>
               <li>
-                <Link className={classes.color} to="/">
+                <Link className={classes.color} to="/products">
                   Products
                 </Link>
               </li>

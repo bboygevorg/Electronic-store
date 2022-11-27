@@ -1,0 +1,34 @@
+@import "../../scss/variables.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  max-width: $container_width;
+  margin: 0 $margin_auto;
+  padding-right: 2rem;
+  height: 2.6rem;
+
+  @media screen and (max-width: 1200px) and (min-width: 767px) {
+    margin: 0 2rem;
+  }
+
+  @media screen and (max-width: 767px) and (min-width: 320px) {
+    margin: 0 2rem;
+    padding: 0.67rem 0rem;
+  }
+
+  .off_page {
+    @include paragraph_4;
+    margin-right: 0.7rem;
+  }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    margin-right: 0.7rem;
+  }
+
+  .to_pages {
+    @include paragraph_4;
+  }
+}

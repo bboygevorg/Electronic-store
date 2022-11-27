@@ -74,7 +74,11 @@
           display: inline-block;
           cursor: pointer;
           margin-right: 1.5rem;
+          margin-top: -0.6rem;
           display: none;
+          outline: none;
+          border: 0;
+          background: transparent;
 
           @media screen and (max-width: 767px) and (min-width: 320px) {
             display: block;

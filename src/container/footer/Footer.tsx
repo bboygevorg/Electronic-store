@@ -72,11 +72,11 @@ const Footer: React.FC = () => {
                 >
                   <div>
                     <Link to="/">
-                      <p>Today's Deals</p>
+                      <p>Today&apos;s Deals</p>
                     </Link>
                   </div>
                   <div>
-                    <Link to="/">
+                    <Link to="/products">
                       <p>Product</p>
                     </Link>
                   </div>

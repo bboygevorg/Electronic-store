@@ -20,9 +20,10 @@ const Home: React.FC = () => {
             buttonWidth="2.5rem"
             buttonHeight="2.25rem"
             buttonMarginBottom="-1px"
+            strokeSvg="#3598cc"
           />
         </div>
-        <p className={classes.container_title}>Today's Deals</p>
+        <p className={classes.container_title}>Today&apos;s Deals</p>
         <div className={classes.deals_bar_content}>
           <ProductDealsCart />
         </div>

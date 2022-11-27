@@ -33,6 +33,9 @@
       width: 4.5rem;
       cursor: pointer;
       position: relative;
+      outline: none;
+      border: none;
+      background: transparent;
 
       img {
         width: 100%;
@@ -42,7 +45,7 @@
         display: inline-block;
         vertical-align: baseline;
         margin-left: 0.5rem;
-        margin-top: 0.1rem;
+        margin-top: 0.01rem;
         color: $gray_500;
         @include paragraph_3;
         font-size: 1rem;
