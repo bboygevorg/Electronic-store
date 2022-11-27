@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Search, Pages, Sort } from "../../components";
 import products_banner from "../../assets/banner/product_banner.png";
 

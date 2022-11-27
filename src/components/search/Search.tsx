@@ -1,5 +1,4 @@
 import React from "react";
-import search from "../../assets/icon/Vector.svg";
 import { Input, Button } from "../../helpers/globalStyle";
 
 import classes from "./search.module.scss";

@@ -8,14 +8,14 @@ const Sort = () => {
   return (
     <>
       <div className={classes.sort}>
-        <span
+        <button
           className={classes.sort_title}
           onClick={() => {
             setSort(!sort);
           }}
         >
           Default
-        </span>
+        </button>
         <div className={sort ? classes.sort_popup : classes.sort_none}>
           <ul>
             <li className="active">
