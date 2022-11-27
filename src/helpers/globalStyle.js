@@ -50,6 +50,7 @@ export const Button = styled.button`
   vertical-align: middle;
   margin-bottom: ${(props) => props.buttonMarginBottom};
   position: relative;
+  stroke: ${(props) => props.strokeSvg};
 `;
 
 export const SectionCart = styled.section`

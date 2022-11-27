@@ -43,6 +43,7 @@ export const Header = (props: scrollUpdateProps) => {
               buttonWidth="2.5rem"
               buttonHeight="2.44rem"
               buttonMarginBottom="2.3px"
+              strokeSvg="#fff"
             />
           </div>
           <div className={classes.account_bar}>
@@ -83,7 +84,7 @@ export const Header = (props: scrollUpdateProps) => {
                 </Link>
               </li>
               <li>
-                <Link className={classes.color} to="/">
+                <Link className={classes.color} to="/products">
                   Products
                 </Link>
               </li>

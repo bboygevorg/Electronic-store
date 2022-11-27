@@ -20,6 +20,7 @@ const Home: React.FC = () => {
             buttonWidth="2.5rem"
             buttonHeight="2.25rem"
             buttonMarginBottom="-1px"
+            strokeSvg="#3598cc"
           />
         </div>
         <p className={classes.container_title}>Today's Deals</p>

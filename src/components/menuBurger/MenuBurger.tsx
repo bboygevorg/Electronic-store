@@ -40,8 +40,7 @@ const MenuBurger = (props: menuActiveProps) => {
             <Link to="/">Today's Deals</Link>
           </div>
           <div>
-            <p>Brands</p>
-            <img src={rowRight} />
+            <Link to="/products">Products</Link>
           </div>
           <div>
             <p>Brands</p>
